@@ -20,7 +20,7 @@ app.use(
   })
 );
 app.use(checkForSession);
-app.use(express.static(`${_dirname}/../build`));
+// app.use(express.static(`${_dirname}/../build`));
 
 app.post("/api/register", authController.register);
 app.post("/api/login", authController.login);
